@@ -1,0 +1,6 @@
+[book]
+authors = ["rohansx"]
+language = "en"
+multilingual = false
+src = "src"
+title = "WEB3 SECURITY"
