@@ -1,33 +1,47 @@
 # WEB3 SECURITY
-To install and run an application locally using the steps you provided, follow these instructions:
+The [web3-security](https://github.com/rohansx/web3-security) repository is a collection of resources and code related to the topic of web3-security. The goal of this project is to provide guidance and tools to the Developers, Pentesters, Bug Hunters and security enthusiasts on web3 stack.
 
-1. Clone the Repository:
-   ```bash
-   git clone <repository_url>
-   ```
-   Replace `<repository_url>` with the URL of the repository you want to clone.
+---
 
-2. Install `mdbook`:
-   `mdbook` is a Rust-based utility for building books using Markdown. To install `mdbook`, follow the steps below:
+### **Steps to install and run in localhost**
+### **I. Clone the repository**
+- Open the terminal and navigate to the directory where the repository has to be cloned.
+- Execute the below command to clone the repository.
+    ```bash
+    git clone <repository_url>
+    ```
+    > **Note :** *Replace the <repository_url> with the URL of this repository (https://github.com/rohansx/web3-security.git or [git@github.com:rohansx/web3-security.git](git@github.com:rohansx/web3-security.git))*
 
-   a. Ensure that Rust and Cargo are installed on your system. If you don't have them installed, you can follow the official Rust installation instructions: https://www.rust-lang.org/tools/install
+### **II. Install mdbook** 
+- [mdbook](https://github.com/rust-lang/mdBook) is a command-line utility to create modern online books from markdown files.
+- The prerequisites for installing *[mdbook](https://github.com/rust-lang/mdBook)* are *[Rust](https://www.rust-lang.org)* and *[cargo](https://doc.rust-lang.org/cargo/)* *(a rust package manager).*
+- Execute the below commands to install *[Rust](https://www.rust-lang.org)* and *[cargo](https://doc.rust-lang.org/cargo/).*
+    ```bash
+    #sample code to install rust and cargo in ubuntu
+    sudo apt-get update
+    ```
+    ```bash
+    #install rust
+    sudo apt install rustc
+    ```
+    ```bash
+    #install cargo
+    sudo apt -y install cargo
+    ```
+    > **Note :** *Skip the above step if Rust and cargo are installed already.*
+- Execute the below command to install latest ***mdbook***
+    ```bash
+    #command to install mdbook
+    cargo install --git https://github.com/rust-lang/mdBook.git mdbook
+    ```
+- Wait for the installation process to complete. *mdbook* will be installed once all the process completes.
 
-   b. Open a terminal or command prompt and run the following command to install `mdbook`:
-      ```bash
-      cargo install mdbook
-      ```
+### **III. Serve the application on localhost**
+- Open the terminal and navigate to cloned repository.
+- Execute the below command to serve the application on localhost.
+    ```bash
+    mdbook serve --open
+    ```
+- On executing the above command the application will be automatically opened in the default web browser, running on ***http://localhost:3000*** or any respective url and port.
 
-3. Serve the Application on localhost:
-   Once `mdbook` is installed, navigate to the cloned repository's directory using the terminal or command prompt.
-
-   a. Run the following command to serve the application locally:
-      ```bash
-      mdbook serve --open
-      ```
-      This command starts a local web server and automatically opens your default web browser to preview the application.
-
-   b. The application should now be accessible at `http://localhost:3000` or a similar address. The actual port number may vary depending on the configuration.
-
-   c. You can now view and interact with the application in your web browser. Any changes made to the Markdown files will automatically trigger a rebuild, and the web page will refresh to reflect the updates.
-
-That's it! You have successfully installed and run the application on your local host using `mdbook`.
+*By following the above steps, you should be able to clone the repository, install mdbook and run the application on localhost.*
