@@ -1,5 +1,7 @@
 # WEB3 SECURITY
-Resources for web3 security 
+The [web3-security](https://github.com/rohansx/web3-security) repository is a collection of resources and code related to the topic of web3-security. The goal of this project is to provide guidance and tools to the Developers, Pentesters, Bug Hunters and security enthusiasts on web3 stack.
+
+---
 
 ### **Steps to install and run in localhost**
 ### **I. Clone the repository**
@@ -8,7 +10,7 @@ Resources for web3 security
     ```bash
     git clone <repository_url>
     ```
-    > **Note :** *Replace the <repository_url> with the URL of the repository that has to be cloned.*
+    > **Note :** *Replace the <repository_url> with the URL of this repository (https://github.com/rohansx/web3-security.git or [git@github.com:rohansx/web3-security.git](git@github.com:rohansx/web3-security.git))*
 
 ### **II. Install mdbook** 
 - [mdbook](https://github.com/rust-lang/mdBook) is a command-line utility to create modern online books from markdown files.
