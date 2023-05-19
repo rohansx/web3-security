@@ -8,7 +8,7 @@ The [web3-security](https://github.com/rohansx/web3-security) repository is a co
 - Open the terminal and navigate to the directory where the repository has to be cloned.
 - Execute the below command to clone the repository.
     ```bash
-    git clone https://github.com/rohansx
+    git clone https://github.com/rohansx/web3-security.git
     ```
     > **Note :** *Replace the <repository_url> with the URL of this repository (https://github.com/rohansx/web3-security.git or [git@github.com:rohansx/web3-security.git](git@github.com:rohansx/web3-security.git))*
 
