@@ -84,7 +84,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded "><a href="introduction.html"><strong aria-hidden="true">1.</strong> Introduction</a></li><li class="chapter-item expanded "><a href="common-vulnerability.html"><strong aria-hidden="true">2.</strong> Common Vulnerabilities | Web3</a></li><li class="chapter-item expanded "><a href="blogs-reports.html"><strong aria-hidden="true">3.</strong> Blogs & Reports | Web3</a></li><li class="chapter-item expanded "><a href="ctf-platform.html"><strong aria-hidden="true">4.</strong> CTFs Platform | Web3</a></li><li class="chapter-item expanded "><a href="bughunting-platform.html"><strong aria-hidden="true">5.</strong> Bug Hunting Platform | Web3</a></li><li class="chapter-item expanded "><a href="sc-audit-reports.html"><strong aria-hidden="true">6.</strong> Smart Contract and Audit Reports | Web3</a></li></ol>
+                <ol class="chapter"><li class="chapter-item expanded "><a href="introduction.html"><strong aria-hidden="true">1.</strong> Introduction</a></li><li class="chapter-item expanded "><a href="blockchain-forensic-tool.html"><strong aria-hidden="true">2.</strong> Blockchain Forensics Tool</a></li><li class="chapter-item expanded "><a href="common-vulnerability.html"><strong aria-hidden="true">3.</strong> Common Vulnerabilities | Web3</a></li><li class="chapter-item expanded "><a href="blogs-reports.html"><strong aria-hidden="true">4.</strong> Blogs & Reports | Web3</a></li><li class="chapter-item expanded "><a href="ctf-platform.html"><strong aria-hidden="true">5.</strong> CTFs Platform | Web3</a></li><li class="chapter-item expanded "><a href="bughunting-platform.html"><strong aria-hidden="true">6.</strong> Bug Hunting Platform | Web3</a></li><li class="chapter-item expanded "><a href="sc-audit-reports.html"><strong aria-hidden="true">7.</strong> Smart Contract and Audit Reports</a></li><li class="chapter-item expanded "><a href="sc-audit-tools.html"><strong aria-hidden="true">8.</strong> Smart Contract Auditing Tools</a></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
@@ -209,6 +209,73 @@ contract MyContract {
 <h3 id="view-and-pure"><a class="header" href="#view-and-pure">View and pure</a></h3>
 <h3 id="constructor"><a class="header" href="#constructor">Constructor</a></h3>
 <h3 id="mapping"><a class="header" href="#mapping">Mapping</a></h3>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="blockchain-forensics-tool"><a class="header" href="#blockchain-forensics-tool">Blockchain Forensics Tool</a></h1>
+<h3 id="blockchain-explorers"><a class="header" href="#blockchain-explorers">Blockchain Explorers:</a></h3>
+<ul>
+<li><a href="https://etherscan.io/">Etherscan</a></li>
+<li><a href="https://btc.com/">btc.com</a></li>
+<li><a href="https://bscscan.com/">Bscscan</a></li>
+<li><a href="https://polygonscan.com/">Polygonscan</a></li>
+<li><em>Universal Explorers</em>
+<ol>
+<li><a href="https://www.blockchain.com/explorer">Blockchain.com</a></li>
+<li><a href="https://blockchair.com/">Blockchair.com</a></li>
+</ol>
+</li>
+</ul>
+<h3 id="smart-contract-decompilers"><a class="header" href="#smart-contract-decompilers">Smart contract Decompilers</a></h3>
+<ul>
+<li><a href="https://library.dedaub.com/decompile">Dedaub</a></li>
+<li><a href="https://github.com/palkeo/panoramix">Panoramix</a></li>
+<li><a href="https://github.com/Decurity/abi-decompiler">abi-decompiler</a></li>
+</ul>
+<h3 id="browser-extensions"><a class="header" href="#browser-extensions">Browser Extensions:</a></h3>
+<ul>
+<li><a href="https://chrome.google.com/webstore/detail/tenderly-debugger/miiolgcpknpjjfagkaddfgakbdenenfn">Tenderly</a></li>
+<li><a href="https://chrome.google.com/webstore/detail/metadock/fkhgpeojcbhimodmppkbbliepkpcgcoo">MetaDock</a></li>
+<li><a href="https://chrome.google.com/webstore/detail/blockchair/fhhkkooikehnkaodebbfnkinedlllcfk">Blockchair</a></li>
+<li><a href="https://chrome.google.com/webstore/detail/impersonator/hgihfkmoibhccfdohjdbklmmcknjjmgl">Impersonator</a></li>
+</ul>
+<h3 id="rug-checker-tools"><a class="header" href="#rug-checker-tools">Rug Checker Tools</a></h3>
+<ul>
+<li><a href="https://www.rugpullfinder.io/confirmedrugpulls">Rug Pull Finder</a></li>
+<li><a href="http://bscheck.eu/">bscheck</a></li>
+<li><a href="http://rugscreen.com/">rugscreen</a></li>
+<li><a href="https://quillaudits.com/tools/quillcheck/">QuillCheck</a></li>
+<li><a href="https://poocoin.app/rugcheck">poocoin’s rugcheck</a></li>
+<li><a href="https://tokensniffer.com/">tokensniffer</a></li>
+<li><a href="http://rugpulldetector.com/">rugpulldetector</a></li>
+<li><a href="https://rugdoc.io/honeypot/">rugdoc honeypot checker</a></li>
+</ul>
+<h3 id="txn-visualization-tools"><a class="header" href="#txn-visualization-tools">Txn Visualization Tools</a></h3>
+<ul>
+<li><a href="https://misttrack.io/">MistTrack</a></li>
+<li><a href="https://ethtx.info/">ethtx.info</a></li>
+<li><a href="https://zeromev.org/">Front-running explorer</a></li>
+<li><a href="https://phalcon.blocksec.com/?s=09">Phalcon BlockSec</a></li>
+<li><a href="https://explorer.bitquery.io/">Bitquery Explorer</a></li>
+<li><a href="https://tx.eth.samczsun.com/">Tx eth samczsun</a></li>
+<li><a href="https://tenderly.co/">Tenderly</a></li>
+<li><a href="https://socketscan.io/">Socketscan</a></li>
+<li><a href="https://ethresear.ch/t/open-source-3d-and-vr-blockchain-visualizations/3297/2">3D VR blockchain visualization</a></li>
+<li><a href="https://eigenphi.io/">eigenphi.io</a></li>
+<li><a href="https://nansen.ai">nansen.ai</a></li>
+<li><a href="https://github.com/OffcierCia/On-Chain-Investigations-Tools-List"><strong>Officer CIA’s Investigation tools list</strong></a></li>
+</ul>
+<h3 id="toke-flow-visualizer"><a class="header" href="#toke-flow-visualizer">Toke Flow Visualizer:</a></h3>
+<ul>
+<li><a href="https://www.breadcrumbs.app/">breadcrumbs.app</a></li>
+<li><a href="https://bloxy.info/">bloxy.info</a></li>
+<li><a href="http://ethtective.com/">ethtective.com</a></li>
+</ul>
+<h3 id="miscellaneous-tools"><a class="header" href="#miscellaneous-tools">Miscellaneous tools</a></h3>
+<ul>
+<li><a href="https://eth-toolbox.com/">ETH Toolbox</a></li>
+<li><a href="https://github.com/dethcrypto/dethcode">DethCode</a></li>
+<li><a href="https://start.me/p/ek4rxK/cryptocurrency-osint">Cryptocurrencies OSINT</a></li>
+<li><a href="https://debank.com/">DeBank</a></li>
+<li><a href="https://tutela.xyz/">Tutela</a></li>
+</ul>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="common-vulnerabilities-in-smart-contracts"><a class="header" href="#common-vulnerabilities-in-smart-contracts">Common Vulnerabilities in Smart Contracts</a></h1>
 <h3 id="price-oracle-manipulation"><a class="header" href="#price-oracle-manipulation"><a href="https://">Price Oracle Manipulation</a></a></h3>
 <h3 id="message-call-with-hardcoded-gas-amount"><a class="header" href="#message-call-with-hardcoded-gas-amount"><a href="https://">Message call with hardcoded gas amount</a></a></h3>
@@ -287,6 +354,75 @@ contract MyContract {
 <li><a href="https://github.com/Tech-Audit/Smart-Contract-Audits">Tech-Audit</a></li>
 <li><a href="https://drive.google.com/drive/folders/1kkjdpNuRmTjaiIKA6CQISavCvj4Awpbc">Sifchain</a></li>
 <li><a href="https://github.com/0xNazgul/Blockchain-Security-Audit-List">Complete List of Security Audit Reports</a></li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="smart-contract-auditing-tools"><a class="header" href="#smart-contract-auditing-tools">Smart Contract Auditing Tools</a></h1>
+<h3 id="testing-frameworks"><a class="header" href="#testing-frameworks">Testing Frameworks:</a></h3>
+<ul>
+<li><a href="https://github.com/foundry-rs/foundry">Foundry</a></li>
+<li><a href="https://hardhat.org/">Hardhat</a></li>
+<li><a href="https://eth-brownie.readthedocs.io/en/stable/">Brownie</a></li>
+<li><a href="https://trufflesuite.com/">Truffle</a></li>
+</ul>
+<h3 id="fuzzers"><a class="header" href="#fuzzers">Fuzzers::</a></h3>
+<ul>
+<li><a href="https://github.com/crytic/echidna">Echidna</a></li>
+<li><a href="https://book.getfoundry.sh/forge/fuzz-testing">Foundry Fuzz</a></li>
+<li><a href="https://github.com/ChainSecurity/ChainFuzz">ChainFuzz</a></li>
+<li><a href="https://mariachris.github.io/Pubs/FSE-2020-Harvey.pdf">Harvey</a></li>
+<li><a href="https://ink.library.smu.edu.sg/cgi/viewcontent.cgi?article=6068&amp;context=sis_research">sFuzz</a></li>
+</ul>
+<h3 id="vs-code-extensions"><a class="header" href="#vs-code-extensions">VS Code Extensions</a></h3>
+<ul>
+<li><a href="https://marketplace.visualstudio.com/items?itemName=tintinweb.solidity-visual-auditor">Solidity Visual Developer</a></li>
+<li><a href="https://marketplace.visualstudio.com/items?itemName=trailofbits.slither-vscode">Slither VSC</a></li>
+<li><a href="https://github.com/tintinweb/vscode-inline-bookmarks">Inline Bookmarks</a></li>
+<li><a href="https://marketplace.visualstudio.com/items?itemName=tintinweb.solidity-metrics">Solidity Metrics</a></li>
+<li><a href="https://marketplace.visualstudio.com/items?itemName=tintinweb.vscode-ethover">EthOver</a></li>
+<li><a href="https://marketplace.visualstudio.com/items?itemName=tintinweb.graphviz-interactive-preview">GraphViz Interactive Preview</a></li>
+<li><a href="https://marketplace.visualstudio.com/items?itemName=MythX.mythxvsc">Mythx VSC</a></li>
+<li><a href="https://marketplace.visualstudio.com/items?itemName=RemixProject.ethereum-remix">Remix VSC</a></li>
+</ul>
+<h3 id="linters-and-formatters"><a class="header" href="#linters-and-formatters">Linters and Formatters:</a></h3>
+<ul>
+<li><a href="https://github.com/duaraghav8/Ethlint">EthLint</a></li>
+<li><a href="https://github.com/sc-forks/solidity-coverage">solidity-coverage</a></li>
+<li><a href="https://prettier.io/">Prettier</a> + <a href="https://github.com/prettier-solidity/prettier-plugin-solidity">Solidity Plugin</a></li>
+<li><a href="https://mtmacdonald.github.io/docgen/docs/index.html">Doc-Gen</a></li>
+<li><a href="https://github.com/protofire/solhint">Solhint</a></li>
+<li><a href="https://github.com/EricR/sol-function-profiler">sol function profiler</a></li>
+</ul>
+<h3 id="visualization-tools"><a class="header" href="#visualization-tools">Visualization Tools:</a></h3>
+<ul>
+<li><a href="https://marketplace.visualstudio.com/items?itemName=tintinweb.solidity-visual-auditor">Solidity Visual Developer</a></li>
+<li><a href="https://github.com/ConsenSys/surya">Sūrya</a></li>
+<li><a href="https://github.com/raineorshine/solgraph">Solgraph</a></li>
+<li><a href="https://github.com/ethereum/evmlab">EVM Lab</a></li>
+<li><a href="https://github.com/fergarrui/ethereum-graph-debugger">Ethereum-graph-debugger</a></li>
+</ul>
+<h3 id="dynamics-analysis--static-analysis"><a class="header" href="#dynamics-analysis--static-analysis">Dynamics Analysis &amp; Static Analysis:</a></h3>
+<ul>
+<li><a href="https://github.com/crytic/slither">Slither</a></li>
+<li><a href="https://mythx.io/">MythX</a></li>
+<li><a href="https://github.com/ConsenSys/mythril">Mythril</a></li>
+<li><a href="https://github.com/trailofbits/manticore">Manticore</a></li>
+<li><a href="https://github.com/eth-sri/securify2">securify2</a></li>
+<li><a href="https://github.com/trailofbits/eth-security-toolbox">Eth Security Toolbox</a></li>
+<li><a href="https://github.com/smartdec/smartcheck">smartcheck</a></li>
+<li><a href="https://solidityscan.com/">solidityscan.com</a></li>
+<li><a href="https://github.com/FuzzingLabs/octopus">Fuzzinglab’s Octopus</a></li>
+</ul>
+<h3 id="auditing-books-and-guides"><a class="header" href="#auditing-books-and-guides">Auditing Books and Guides:</a></h3>
+<ul>
+<li><a href="https://theauditorbook.com/">The Auditors Book</a></li>
+<li><a href="https://solodit.xyz/dashboard">Solodit.xyz</a></li>
+<li><a href="https://audit-hero.com/search-findings">Audit Hero</a></li>
+<li><a href="https://github.com/Quillhash/Solidity-Attack-Vectors">Solidity Attack Vectors</a></li>
+<li><a href="https://github.com/tamjid0x01/SmartContracts-audit-checklist">Audit Checklist</a></li>
+<li><a href="https://github.com/iskdrews/awesome-solidity-gas-optimization">Awesome Solidity Gas Optimizations</a></li>
+<li><a href="https://substack.com/profile/23643769-rajeev-secureum">Secureum Blogs</a></li>
+<li><a href="https://consensys.github.io/smart-contract-best-practices/attacks/">Diligence - Smart Contract Best Practices</a></li>
+<li><a href="https://start.blockchainhax.com">Blockchain Hacking QuickStart Guide</a></li>
+<li><a href="https://cmichel.io/how-to-become-a-smart-contract-auditor/">How to Become a Smart Contract Auditor by Cmichel</a></li>
 </ul>
 
                     </main>
