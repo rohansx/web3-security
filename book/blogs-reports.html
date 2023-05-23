@@ -3,8 +3,7 @@
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
-        <title>WEB3 SECURITY</title>
-        <meta name="robots" content="noindex" />
+        <title>Blogs &amp; Reports - WEB3 SECURITY</title>
 
 
         <!-- Custom HTML head -->
@@ -84,7 +83,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded "><a href="introduction.html"><strong aria-hidden="true">1.</strong> Introduction</a></li><li class="chapter-item expanded "><a href="common-vulnerability.html"><strong aria-hidden="true">2.</strong> Common Vulnerabilities in Smart contracts</a></li><li class="chapter-item expanded "><a href="blogs-reports.html"><strong aria-hidden="true">3.</strong> Blogs & Reports</a></li></ol>
+                <ol class="chapter"><li class="chapter-item expanded "><a href="introduction.html"><strong aria-hidden="true">1.</strong> Introduction</a></li><li class="chapter-item expanded "><a href="common-vulnerability.html"><strong aria-hidden="true">2.</strong> Common Vulnerabilities in Smart contracts</a></li><li class="chapter-item expanded "><a href="blogs-reports.html" class="active"><strong aria-hidden="true">3.</strong> Blogs & Reports</a></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
@@ -145,93 +144,7 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="introduction"><a class="header" href="#introduction">Introduction</a></h1>
-<h3 id="etherscan"><a class="header" href="#etherscan"><a href="https://etherscan.io">Etherscan</a></a></h3>
-<ul>
-<li>A block explorer analysis tool </li>
-<li>Lets you view any and all transcations on the blockchain</li>
-<li>Available for both the mainnet and testnet</li>
-</ul>
-<h3 id="remix"><a class="header" href="#remix"><a href="https://remix.ethereum.org">Remix</a></a></h3>
-<ul>
-<li>A Browser based IDE for Solidity</li>
-</ul>
-<h3 id="primitive-datatypes-in-solidity"><a class="header" href="#primitive-datatypes-in-solidity">Primitive Datatypes in Solidity</a></h3>
-<ul>
-<li>int : integer (signed integer)</li>
-<li>uint : unsigned integer (uint8, uint16, uint256=unint)</li>
-<li>bool : Boolean (true or false)</li>
-<li>address : Ethereum Address</li>
-</ul>
-<h3 id="variables-in-solidity"><a class="header" href="#variables-in-solidity">Variables in Solidity</a></h3>
-<ol>
-<li>
-<p>Local Variables </p>
-<ul>
-<li>Declared inside a function</li>
-<li>Not stored on the blockchain</li>
-</ul>
-</li>
-<li>
-<p>State Variables</p>
-<ul>
-<li>Declared outside a function</li>
-<li>Stored on the blockchain</li>
-</ul>
-</li>
-<li>
-<p>Global variables </p>
-<ul>
-<li>It provides information about the blockchain</li>
-<li>e.g msg.sender, msg.value, msg.data, block.timestamp</li>
-</ul>
-</li>
-</ol>
-<h3 id="simple-addition-program-using-solidity"><a class="header" href="#simple-addition-program-using-solidity">Simple addition program using solidity</a></h3>
-<pre><code class="language-python">pragma solidity ^0.8.0;
-
-contract MyContract {
-   unint public number1; //state variable
-
-   function myFunction() public {
-      unint num; //local variable
-   }
-
-   function newFunction() public return (uint, address) {
-      uint num1 = 12;
-      uint num2 = 13;
-      number1 = num1 + num2;
-      address myAddress = msg.sender; //global variable
-      return (number1, myAddress); 
-   }
-}
-</code></pre>
-<h3 id="view-and-pure"><a class="header" href="#view-and-pure">View and pure</a></h3>
-<h3 id="constructor"><a class="header" href="#constructor">Constructor</a></h3>
-<h3 id="mapping"><a class="header" href="#mapping">Mapping</a></h3>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="common-vulnerabilities-in-smart-contracts"><a class="header" href="#common-vulnerabilities-in-smart-contracts">Common Vulnerabilities in Smart contracts</a></h1>
-<h3 id="price-oracle-manipulation"><a class="header" href="#price-oracle-manipulation"><a href="https://">Price Oracle Manipulation</a></a></h3>
-<h3 id="message-call-with-hardcoded-gas-amount"><a class="header" href="#message-call-with-hardcoded-gas-amount"><a href="https://">Message call with hardcoded gas amount</a></a></h3>
-<h3 id="hash-collisions-with-multiple-variable-length-arguments"><a class="header" href="#hash-collisions-with-multiple-variable-length-arguments"><a href="https://">Hash Collisions with multiple variable length arguments</a></a></h3>
-<h3 id="dos-with-block-gas-list"><a class="header" href="#dos-with-block-gas-list"><a href="https://">DoS with Block Gas List</a></a></h3>
-<h3 id="insufficient-gas-griefing"><a class="header" href="#insufficient-gas-griefing"><a href="https://">Insufficient Gas Griefing</a></a></h3>
-<h3 id="missing-protection-against-signature-replay-attacks"><a class="header" href="#missing-protection-against-signature-replay-attacks"><a href="https://">Missing protection against Signature Replay Attacks</a></a></h3>
-<h3 id="lack-of-proper-signature-verification"><a class="header" href="#lack-of-proper-signature-verification"><a href="https://">Lack of Proper Signature verification</a></a></h3>
-<h3 id="weak-sources-of-randomness-from-chain-attributes"><a class="header" href="#weak-sources-of-randomness-from-chain-attributes"><a href="https://">Weak Sources of Randomness from chain attributes</a></a></h3>
-<h3 id="signature-malleability"><a class="header" href="#signature-malleability"><a href="https://">Signature Malleability</a></a></h3>
-<h3 id="authorization-through-txorigin"><a class="header" href="#authorization-through-txorigin"><a href="https://">Authorization through tx.origin</a></a></h3>
-<h3 id="recentrancy"><a class="header" href="#recentrancy"><a href="https://">Recentrancy</a></a></h3>
-<h3 id="code-with-no-effects"><a class="header" href="#code-with-no-effects"><a href="https://">Code with no effects</a></a></h3>
-<h3 id="unencrypted-privated-data-on-chain"><a class="header" href="#unencrypted-privated-data-on-chain"><a href="https://">Unencrypted Privated Data On-Chain</a></a></h3>
-<h3 id="integer-overflow-and-underflow"><a class="header" href="#integer-overflow-and-underflow"><a href="https://">Integer Overflow and Underflow</a></a></h3>
-<h3 id="floating-pragma"><a class="header" href="#floating-pragma"><a href="https://">Floating Pragma</a></a></h3>
-<h3 id="unchecked-call-return-value"><a class="header" href="#unchecked-call-return-value"><a href="https://">Unchecked Call Return Value</a></a></h3>
-<h3 id="unprotected-selfdestruct-instruction"><a class="header" href="#unprotected-selfdestruct-instruction"><a href="https://">Unprotected SELFDESTRUCT Instruction</a></a></h3>
-<h3 id="state-variable-default-visibility"><a class="header" href="#state-variable-default-visibility"><a href="https://">State Variable Default Visibility</a></a></h3>
-<h3 id="unintialized-storage-pointer"><a class="header" href="#unintialized-storage-pointer"><a href="https://">Unintialized Storage pointer</a></a></h3>
-<h3 id="use-of-deprecated-solidity-functions"><a class="header" href="#use-of-deprecated-solidity-functions"><a href="https://">Use of Deprecated Solidity Functions</a></a></h3>
-<h3 id="dos-with-failed-call"><a class="header" href="#dos-with-failed-call"><a href="https://">DoS with Failed Call</a></a></h3>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="blogs--reports"><a class="header" href="#blogs--reports">Blogs &amp; Reports</a></h1>
+                        <h1 id="blogs--reports"><a class="header" href="#blogs--reports">Blogs &amp; Reports</a></h1>
 <ul>
 <li><a href="https://medium.com/immunefi">Immunefi Medium</a></li>
 <li><a href="https://blog.openzeppelin.com/security-audits/">Openzeppelin Blogs</a></li>
@@ -248,6 +161,9 @@ contract MyContract {
 
                     <nav class="nav-wrapper" aria-label="Page navigation">
                         <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="common-vulnerability.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
 
 
                         <div style="clear: both"></div>
@@ -256,6 +172,9 @@ contract MyContract {
             </div>
 
             <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="common-vulnerability.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
 
             </nav>
 
@@ -295,11 +214,6 @@ contract MyContract {
 
         <!-- Custom JS scripts -->
 
-        <script>
-        window.addEventListener('load', function() {
-            window.setTimeout(window.print, 100);
-        });
-        </script>
 
     </div>
     </body>
